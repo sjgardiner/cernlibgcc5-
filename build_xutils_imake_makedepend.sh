@@ -10,13 +10,13 @@ if [ "${1}" == "1" ]; then
 mkdir imake
 cd imake
 
-wget https://www.x.org/archive/individual/util/imake-1.0.7.tar.gz
-tar -zxvf imake-1.0.7.tar.gz
+wget https://www.x.org/archive/individual/util/imake-1.0.8.tar.gz
+tar -zxvf imake-1.0.8.tar.gz
 
 mkdir build
 cd build
 
-../imake-1.0.7/configure --prefix=$(readlink -f Linux)
+../imake-1.0.8/configure --prefix=$(readlink -f Linux)
 make install
 
 cd ../
